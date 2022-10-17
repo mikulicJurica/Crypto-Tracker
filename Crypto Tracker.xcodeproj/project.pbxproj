@@ -9,22 +9,28 @@
 /* Begin PBXBuildFile section */
 		280CAA4A28FAA1E800F7E936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA4928FAA1E800F7E936 /* AppDelegate.swift */; };
 		280CAA4C28FAA1E800F7E936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA4B28FAA1E800F7E936 /* SceneDelegate.swift */; };
-		280CAA4E28FAA1E800F7E936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA4D28FAA1E800F7E936 /* ViewController.swift */; };
+		280CAA4E28FAA1E800F7E936 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA4D28FAA1E800F7E936 /* HomeViewController.swift */; };
 		280CAA5428FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA5228FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld */; };
 		280CAA5628FAA1F000F7E936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280CAA5528FAA1F000F7E936 /* Assets.xcassets */; };
 		280CAA5928FAA1F000F7E936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280CAA5728FAA1F000F7E936 /* LaunchScreen.storyboard */; };
 		280CAA6228FAA35600F7E936 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 280CAA6128FAA35600F7E936 /* SnapKit */; };
+		280CAA6828FDD6B000F7E936 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6728FDD6B000F7E936 /* AddViewController.swift */; };
+		280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */; };
+		280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		280CAA4628FAA1E800F7E936 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		280CAA4928FAA1E800F7E936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		280CAA4B28FAA1E800F7E936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		280CAA4D28FAA1E800F7E936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		280CAA4D28FAA1E800F7E936 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		280CAA5328FAA1E800F7E936 /* Crypto_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crypto_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		280CAA5528FAA1F000F7E936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280CAA5828FAA1F000F7E936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280CAA5A28FAA1F000F7E936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280CAA6728FDD6B000F7E936 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +64,58 @@
 		280CAA4828FAA1E800F7E936 /* Crypto Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				280CAA6B28FDE0FE00F7E936 /* Style */,
+				280CAA6328FDD61000F7E936 /* View Controllers */,
 				280CAA4928FAA1E800F7E936 /* AppDelegate.swift */,
 				280CAA4B28FAA1E800F7E936 /* SceneDelegate.swift */,
-				280CAA4D28FAA1E800F7E936 /* ViewController.swift */,
 				280CAA5528FAA1F000F7E936 /* Assets.xcassets */,
 				280CAA5728FAA1F000F7E936 /* LaunchScreen.storyboard */,
 				280CAA5A28FAA1F000F7E936 /* Info.plist */,
 				280CAA5228FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld */,
 			);
 			path = "Crypto Tracker";
+			sourceTree = "<group>";
+		};
+		280CAA6328FDD61000F7E936 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA6428FDD62900F7E936 /* HomeViewController */,
+				280CAA6628FDD68600F7E936 /* AddViewController */,
+				280CAA6528FDD65100F7E936 /* SettingsViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		280CAA6428FDD62900F7E936 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA4D28FAA1E800F7E936 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		280CAA6528FDD65100F7E936 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		280CAA6628FDD68600F7E936 /* AddViewController */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA6728FDD6B000F7E936 /* AddViewController.swift */,
+			);
+			path = AddViewController;
+			sourceTree = "<group>";
+		};
+		280CAA6B28FDE0FE00F7E936 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280CAA4E28FAA1E800F7E936 /* ViewController.swift in Sources */,
+				280CAA6828FDD6B000F7E936 /* AddViewController.swift in Sources */,
+				280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */,
+				280CAA4E28FAA1E800F7E936 /* HomeViewController.swift in Sources */,
 				280CAA4A28FAA1E800F7E936 /* AppDelegate.swift in Sources */,
 				280CAA4C28FAA1E800F7E936 /* SceneDelegate.swift in Sources */,
 				280CAA5428FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld in Sources */,
+				280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
