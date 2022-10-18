@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     
     private func coinTableViewConfiguration() {
         coinTableView.register(CoinTableViewCell.self, forCellReuseIdentifier: CoinTableViewCell.reuseIdentifier)
-        coinTableView.rowHeight = 50
+        coinTableView.rowHeight = 80
         coinTableView.dataSource = self
     }
     
@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = StyleConstants.AppColors.whiteColor
         
         coinDetailView.backgroundColor = .red
-        coinTableView.backgroundColor = .green
+        coinTableView.backgroundColor = StyleConstants.AppColors.whiteColor
         
     }
     
@@ -63,7 +63,7 @@ extension HomeViewController: UITableViewDataSource {
             fatalError()
         }
         
-        cell.setCoin()
+        cell.setCoinCell()
         
         return cell
     }
