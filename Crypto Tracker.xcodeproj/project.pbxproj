@@ -17,6 +17,7 @@
 		280CAA6828FDD6B000F7E936 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6728FDD6B000F7E936 /* AddViewController.swift */; };
 		280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */; };
 		280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */; };
+		280CAA6F28FE890200F7E936 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		280CAA6728FDD6B000F7E936 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
+		280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				280CAA4D28FAA1E800F7E936 /* HomeViewController.swift */,
+				280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				280CAA4A28FAA1E800F7E936 /* AppDelegate.swift in Sources */,
 				280CAA4C28FAA1E800F7E936 /* SceneDelegate.swift in Sources */,
 				280CAA5428FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld in Sources */,
+				280CAA6F28FE890200F7E936 /* CoinTableViewCell.swift in Sources */,
 				280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
