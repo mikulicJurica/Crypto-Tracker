@@ -63,7 +63,7 @@ extension HomeViewController: UITableViewDataSource {
             fatalError()
         }
         
-        cell.setCoinCell()
+        cell.setCoinCell(coin: "Bitcoin", coinTicker: "BTC", price: 20000, percentage: 5.8)
         
         return cell
     }

@@ -26,8 +26,12 @@ class CoinTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setCoinCell() {
-        
+    func setCoinCell(coin: String, coinTicker: String, price: Float, percentage: Float) {
+        coinImageView.image = UIImage(systemName: "house")
+        coinName.text = coin
+        coinTickerName.text = coinTicker
+        coinPrice.text = String(price) + " EUR"
+        coinDailyPercentage.text = "+\(percentage)%"
     }
     
     private func buildCell() {
@@ -56,18 +60,13 @@ class CoinTableViewCell: UITableViewCell {
     private func styleCell() {
         //cellView.backgroundColor = .yellow
         
-        coinImageView.image = UIImage(systemName: "house")
-        coinName.text = "Bitcoin"
         coinName.textColor = StyleConstants.AppColors.blueColor
         coinName.font = UIFont.boldSystemFont(ofSize: 18)
-        coinTickerName.text = "BTC"
         coinTickerName.textColor = StyleConstants.AppColors.cyanColor
         coinDailyPercentageImageView.image = UIImage(systemName: "arrow.up")
         coinDailyPercentageImageView.tintColor = .systemGreen
-        coinPrice.text = "20.000 EUR"
         coinPrice.font = UIFont.boldSystemFont(ofSize: 18)
         coinPrice.textColor = StyleConstants.AppColors.blueColor
-        coinDailyPercentage.text = "+5.8%"
         coinDailyPercentage.font = UIFont.boldSystemFont(ofSize: 18)
         coinDailyPercentage.textColor = .systemGreen
     }
