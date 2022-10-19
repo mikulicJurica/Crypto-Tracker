@@ -18,6 +18,7 @@
 		280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */; };
 		280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */; };
 		280CAA6F28FE890200F7E936 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */; };
+		280CAA7428FFE4F200F7E936 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 280CAA7328FFE4F200F7E936 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				280CAA6228FAA35600F7E936 /* SnapKit in Frameworks */,
+				280CAA7428FFE4F200F7E936 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,7 @@
 			name = "Crypto Tracker";
 			packageProductDependencies = (
 				280CAA6128FAA35600F7E936 /* SnapKit */,
+				280CAA7328FFE4F200F7E936 /* Charts */,
 			);
 			productName = "Crypto Tracker";
 			productReference = 280CAA4628FAA1E800F7E936 /* Crypto Tracker.app */;
@@ -170,6 +173,7 @@
 			mainGroup = 280CAA3D28FAA1E800F7E936;
 			packageReferences = (
 				280CAA6028FAA35600F7E936 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				280CAA7228FFE4F200F7E936 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 280CAA4728FAA1E800F7E936 /* Products */;
 			projectDirPath = "";
@@ -422,6 +426,14 @@
 				kind = branch;
 			};
 		};
+		280CAA7228FFE4F200F7E936 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -429,6 +441,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 280CAA6028FAA35600F7E936 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		280CAA7328FFE4F200F7E936 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 280CAA7228FFE4F200F7E936 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 

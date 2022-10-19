@@ -77,35 +77,35 @@ class CoinTableViewCell: UITableViewCell {
         })
         
         coinImageView.snp.makeConstraints({
-            $0.leading.equalToSuperview().inset(10)
+            $0.leading.equalToSuperview().inset(15)
             $0.width.equalTo(80)
-            $0.top.bottom.equalToSuperview().inset(10)
+            $0.top.bottom.equalToSuperview().inset(15)
         })
         
         coinName.snp.makeConstraints({
             $0.leading.equalTo(coinImageView.snp.trailing).offset(15)
-            $0.top.equalToSuperview().inset(15)
+            $0.top.equalToSuperview().inset(18)
         })
         
         coinTickerName.snp.makeConstraints({
             $0.leading.equalTo(coinImageView.snp.trailing).offset(15)
-            $0.bottom.equalToSuperview().inset(15)
+            $0.bottom.equalToSuperview().inset(18)
         })
         
         coinPrice.snp.makeConstraints({
             $0.trailing.equalToSuperview().inset(15)
-            $0.top.equalToSuperview().inset(15)
+            $0.top.equalToSuperview().inset(18)
         })
         
         coinDailyPercentage.snp.makeConstraints({
             $0.trailing.equalToSuperview().inset(15)
-            $0.bottom.equalToSuperview().inset(15)
+            $0.bottom.equalToSuperview().inset(18)
         })
         
         coinDailyPercentageImageView.snp.makeConstraints({
             $0.width.equalTo(50)
             $0.trailing.equalTo(coinPrice.snp.leading).offset(-15)
-            $0.top.bottom.equalToSuperview().inset(10)
+            $0.top.bottom.equalToSuperview().inset(15)
         })
     }
     
