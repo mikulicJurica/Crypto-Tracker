@@ -19,6 +19,10 @@
 		280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */; };
 		280CAA6F28FE890200F7E936 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */; };
 		280CAA7428FFE4F200F7E936 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 280CAA7328FFE4F200F7E936 /* Charts */; };
+		280CAA772901AC3600F7E936 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA762901AC3600F7E936 /* CoinModel.swift */; };
+		280CAA7A2901ACAD00F7E936 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA792901ACAD00F7E936 /* NetworkService.swift */; };
+		280CAA802901AF3400F7E936 /* CoinListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA7F2901AF3400F7E936 /* CoinListModel.swift */; };
+		280CAA822901B58E00F7E936 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CAA812901B58E00F7E936 /* RequestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		280CAA6928FDD6C600F7E936 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		280CAA6E28FE890200F7E936 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		280CAA762901AC3600F7E936 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		280CAA792901ACAD00F7E936 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		280CAA7F2901AF3400F7E936 /* CoinListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListModel.swift; sourceTree = "<group>"; };
+		280CAA812901B58E00F7E936 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		280CAA4828FAA1E800F7E936 /* Crypto Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				280CAA782901AC9000F7E936 /* Network */,
+				280CAA752901AC2000F7E936 /* Model */,
 				280CAA6B28FDE0FE00F7E936 /* Style */,
 				280CAA6328FDD61000F7E936 /* View Controllers */,
 				280CAA4928FAA1E800F7E936 /* AppDelegate.swift */,
@@ -121,6 +131,24 @@
 				280CAA6C28FDE11C00F7E936 /* StyleConstants.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		280CAA752901AC2000F7E936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA762901AC3600F7E936 /* CoinModel.swift */,
+				280CAA7F2901AF3400F7E936 /* CoinListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		280CAA782901AC9000F7E936 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				280CAA792901ACAD00F7E936 /* NetworkService.swift */,
+				280CAA812901B58E00F7E936 /* RequestError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,13 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280CAA7A2901ACAD00F7E936 /* NetworkService.swift in Sources */,
 				280CAA6828FDD6B000F7E936 /* AddViewController.swift in Sources */,
+				280CAA802901AF3400F7E936 /* CoinListModel.swift in Sources */,
 				280CAA6D28FDE11C00F7E936 /* StyleConstants.swift in Sources */,
 				280CAA4E28FAA1E800F7E936 /* HomeViewController.swift in Sources */,
 				280CAA4A28FAA1E800F7E936 /* AppDelegate.swift in Sources */,
 				280CAA4C28FAA1E800F7E936 /* SceneDelegate.swift in Sources */,
 				280CAA5428FAA1E800F7E936 /* Crypto_Tracker.xcdatamodeld in Sources */,
+				280CAA822901B58E00F7E936 /* RequestError.swift in Sources */,
 				280CAA6F28FE890200F7E936 /* CoinTableViewCell.swift in Sources */,
+				280CAA772901AC3600F7E936 /* CoinModel.swift in Sources */,
 				280CAA6A28FDD6C600F7E936 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

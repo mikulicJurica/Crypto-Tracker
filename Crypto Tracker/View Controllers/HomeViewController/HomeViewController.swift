@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     private var timeRangeText = ["1H", "1D", "1W", "1M", "1Y", "ALL"]
     
     private var coinTableView: UITableView!
+    
+    private var networkService = NetworkService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,18 @@ class HomeViewController: UIViewController {
         coinTableViewConfiguration()
         styleViews()
         buildConstraints()
+        
+        
+        networkService.searchForCoin(searchString: "bitcoin", completionHandler: { (result: Result<CoinSearchListModel, RequestError>) in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        })
+        
+        
     }
     
     private func buildViews() {
