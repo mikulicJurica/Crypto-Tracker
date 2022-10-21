@@ -25,7 +25,16 @@ class HomeViewController: UIViewController {
         buildConstraints()
         
         
-        networkService.searchForCoin(searchString: "bitcoin", completionHandler: { (result: Result<CoinSearchListModel, RequestError>) in
+//        networkService.searchForCoin(searchString: "bitcoin", completionHandler: { (result: Result<SearchListModel, RequestError>) in
+//            switch result {
+//            case .success(let success):
+//                print(success)
+//            case .failure(let failure):
+//                print(failure)
+//            }
+//        })
+        
+        networkService.getCoinData(coinId: "bitcoin", completionHandler: { (result: Result<CoinModel, RequestError>) in
             switch result {
             case .success(let success):
                 print(success)

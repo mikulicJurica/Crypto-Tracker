@@ -2,7 +2,7 @@ import Foundation
 
 class NetworkService {
     
-    func searchForCoin(searchString: String, completionHandler: @escaping (Result<CoinSearchListModel, RequestError>) -> Void) {
+    func searchForCoin(searchString: String, completionHandler: @escaping (Result<SearchListModel, RequestError>) -> Void) {
         let url = URL(string: "https://api.coingecko.com/api/v3/search?query=\(searchString)")!
         
         var request = URLRequest(url: url)
@@ -12,8 +12,8 @@ class NetworkService {
         executeUrlRequest(request, completionHandler: completionHandler)
     }
     
-    func getCoinData(completionHandler: @escaping (Result<CoinModel, RequestError>) -> Void) {
-        let url = URL(string: "https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false")!
+    func getCoinData(coinId: String, completionHandler: @escaping (Result<CoinModel, RequestError>) -> Void) {
+        let url = URL(string: "https://api.coingecko.com/api/v3/coins/\(coinId)?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false")!
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
