@@ -1,5 +1,12 @@
 import Foundation
 
-struct CoinSearchListModel: Codable {
-    let coins: [CoinModel]
+struct SearchListModel: Codable {
+    let coins: [SearchCoinModel]
+}
+
+struct SearchCoinModel: Codable {
+    let id: String
+    let name: String
+    let symbol: String
+    let large: String
 }
